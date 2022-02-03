@@ -8,8 +8,8 @@ const MainHeader = (props) => {
         <header className={classes["main-header"]}>
             <h1>A Typical Page</h1>
             <Navigation
-                isLoggedIn={props.isAuthenticated}
-                onLogout={props.onLogout}
+                isLoggedIn={props.isAuthenticated}// isLoggedIn'ge jarasha navigation render bolot false bolso navigation chykpai kalat
+                onLogout={props.onLogout} // props ichinde functsiya bar onLogouot baskanda isLoggedIn true/false 'ka almashat
             />
         </header>
     );
